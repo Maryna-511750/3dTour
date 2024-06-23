@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Leckerli+One&family=Source+Sans+3:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*--text-color:#1D1340;*/
+    /*--text-color-alternative: #5D7A8C;*/
+    /*--price-color: #223440;*/
+    /*--background-color-dark: #BACBD9;*/
+    /*--background-color: #F2F2F2;*/
+    /*--blog-button-hover-color: #A197A6;*/
+
+    --text-color: #734B34;
+    --text-color-alternative: #BFA38A;
+    --text-link-color: #8C5D65;
+    --background-color-dark: #D9D5D2;
+    --background-color: #F2EEEB;
+    --text-color-light: #F2C879;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/*font-family*/
+.gallery-headers-sections-name {
+    font-family: 'Leckerli One', cursive;
+    font-size: 14px;
+}
+.gallery-headers-paragraph-welcome,
+.gallery-nav-sections-button,
+.gallery-footer {
+    font-family: 'Source Sans 3', sans-serif;
+}
+.gallery-headers-big-paragraph,
+.gallery-position-name {
+    font-family: 'Dangrek', cursive;
+}
+/*font-family*/
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin:auto;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 70%;
+        max-width: 1200px;
+    }
+}

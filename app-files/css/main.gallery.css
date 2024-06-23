@@ -1,0 +1,130 @@
+#gallery,
+#header {
+    text-align: center;
+}
+
+#header {
+    padding: 60px 24px 30px 24px;
+}
+
+.gallery-headers-paragraph-welcome {
+    color: var(--text-color-alternative);
+    font-size: 18px;
+    margin-top: 15px;
+}
+.gallery-headers-sections-name{
+    font-size: 20px;
+}
+
+.gallery-headers-big-paragraph {
+    font-size: 34px;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+.gallery-nav {
+    display: inline-flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--text-link-color);
+    width: 100%;
+    justify-content: center;
+}
+
+.gallery-nav-sections-button {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
+    border: none;
+    padding: 15px 20px;
+}
+
+.gallery-pages {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-content: space-around;
+    border-bottom: 1px solid var(--text-link-color);
+    padding-bottom: 30px;
+}
+
+.gallery-position {
+    background-color: var(--background-color-dark);
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.gallery-position-img {
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-position-img img{
+    display: block;
+    width: 100%;
+}
+
+.gallery-position-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+}
+
+.gallery-position-link,
+.menu-position-name {
+    font-size: 22px;
+}
+
+.gallery-position-link{
+    color: var(--text-link-color);
+}
+
+.gallery-footer {
+    padding: 30px 0 100px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gallery-footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.gallery-position-link:hover,
+.gallery-footer a:hover {
+    color: var(--text-color-alternative);
+}
+
+.gallery-footer div {
+    margin-bottom: 10px;
+}
+
+.gallery-footer-contact {
+    font-size: 14px;
+}
+
+@media (min-width: 768px){
+    .gallery-pages {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery-footer {
+        font-size: 16px;
+    }
+    .gallery-footer-contact {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px){
+    .gallery-headers-sections-name {
+        font-size: 21px;
+    }
+    .gallery-headers-big-paragraph {
+        font-size: 48px;
+        margin-top: 10px;
+    }
+    .gallery-headers-paragraph-welcome {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
