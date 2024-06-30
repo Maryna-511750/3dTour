@@ -5,7 +5,7 @@
 
 .gallery-nav {
     display: inline-flex;
-    margin-top: 25px;
+    margin-top: 15%;
     margin-bottom: 30px;
     border-bottom: 1px solid var(--text-link-color);
     width: 100%;
