@@ -5,7 +5,7 @@
 
 .gallery-nav {
     display: inline-flex;
-    margin-top: 15%;
+    margin-top: 40px;
     margin-bottom: 30px;
     border-bottom: 1px solid var(--text-link-color);
     width: 100%;
@@ -83,6 +83,13 @@
 
     .gallery-pages {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .gallery-nav {
+        margin-top: 24px;
     }
 }
 
