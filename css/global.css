@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Leckerli+One&family=Source+Sans+3:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Bebas+Neue&family=Archivo+Black&family=Leckerli+One&family=Source+Sans+3:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -7,28 +7,24 @@
 }
 
 :root {
-    /*--text-color:#1D1340;*/
-    /*--text-color-alternative: #5D7A8C;*/
-    /*--price-color: #223440;*/
-    /*--background-color-dark: #BACBD9;*/
-    /*--background-color: #F2F2F2;*/
-    /*--blog-button-hover-color: #A197A6;*/
-
-    --text-color: #734B34;
-    --text-color-alternative: #BFA38A;
-    --text-link-color: #8C5D65;
-    --background-color-dark: #D9D5D2;
-    --background-color: #F2EEEB;
-    --text-color-light: #F2C879;
+    --text-color: #595959;
+    --text-color-alternative: #0D0D0D;
+    --text-link-color: #BFBFBF;
+    --background-color-dark: #F2F2F2;
+    --background-color: white;
+    --text-color-light: #8C8C8C;
     scroll-behavior: smooth;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
 /*font-family*/
-.gallery-headers-sections-name {
-    font-family: 'Leckerli One', cursive;
-    font-size: 14px;
+
+.gallery-headers-sections-name{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
 }
 .gallery-headers-paragraph-welcome,
 .gallery-nav-sections-button,
@@ -41,6 +37,10 @@
 }
 /*font-family*/
 
+.navbar {
+    width: 100%;
+}
+
 img {
     display: block;
     width: 100%;
@@ -48,12 +48,18 @@ img {
 
 .container {
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
 
-@media (min-width: 768px){
+@media (min-width: 992px){
     .container {
         width: 70%;
         max-width: 1200px;
+        margin-left: 25%;
+        margin-right: 5%;
     }
+    .navbar {
+        max-width: 20%;
+    }
+
 }

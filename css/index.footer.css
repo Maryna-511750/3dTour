@@ -1,0 +1,33 @@
+.gallery-footer {
+    padding: 100px 0 100px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gallery-footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.gallery-footer a:hover {
+    color: var(--text-color-light);
+}
+
+.gallery-footer div {
+    margin-bottom: 10px;
+}
+
+.gallery-footer-contact {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+
+    .gallery-footer {
+        font-size: 16px;
+    }
+    .gallery-footer-contact {
+        font-size: 12px;
+    }
+}

@@ -1,38 +1,111 @@
-const rooms = [
+const items = [
     {
-        id: "1",
-        name: "First room",
-        image: "images/free-icon-living-room.png",
+        id: 1,
+        name: "Images-1",
+        image: "images/images9.jpeg",
         link: "tour.html",
     },
     {
-        id: "2",
-        name: "Studio",
-        image: "images/free-icon-workspace.png",
+        id: 2,
+        name: "Images-2",
+        image: "images/images5.jpeg",
+        link: "tour.html",
+    },
+    {
+        id: 3,
+        name:"Images-3",
+        image: "images/images2.jpg",
+        link: "tour.html",
+    },
+    {
+        id: 4,
+        name:"Images-4",
+        image: "images/images3.jpg",
+        link: "tour.html",
+    },
+    {
+        id: 5,
+        name: "Images-5",
+        image: "images/images4.jpg",
+        link: "tour.html",
+    },
+    {
+        id: 6,
+        name: "Images-6",
+        image: "images/images6.jpeg",
+        link: "tour.html",
+    },{
+        id: 7,
+        name: "Images-7",
+        image: "images/images10.jpg",
+        link: "tour.html",
+    },
+    {
+        id: 8,
+        name: "Images-8",
+        image: "images/images8.jpeg",
+        link: "tour.html",
+    },
+    {
+        id: 9,
+        name: "Images-9",
+        image: "images/images1.jpg",
+        link: "tour.html",
+    },
+    {
+        id: 10,
+        name: "Images-10",
+        image: "images/images7.jpeg",
+        link: "tour.html",
+    },
+    {
+        id: 11,
+        name: "Images-11",
+        image: "images/images11.jpeg",
+        link: "tour.html",
+    },
+    {
+        id: 12,
+        name: "Images-12",
+        image: "images/images12.jpeg",
         link: "tour.html",
     }
 ];
 
-const galleryPages = [rooms];
+const galleryPages = [items];
   
   function renderGalleryPosition (positions) {
-    let galleryPositionsDomString = '';
+    let galleryPositionsDomString1 = '';
+    let galleryPositionsDomString2 = '';
     for (const position of positions){
-        galleryPositionsDomString += `
-        <div class="gallery-position">
-            <div class="gallery-position-img">
-                <img src="${position.image}" alt="${position.name}">
+        if(position.id % 2 !== 0){
+            galleryPositionsDomString1 += `
+            <div class="gallery-position">
+                    <img src="${position.image}" alt="${position.name}">
+                <div class="gallery-position-text">
+                    <h3 class="gallery-position-name">
+                        <a href="${position.link}" class="gallery-position-link">${position.name}</a>
+                    </h3>         
+                </div>
             </div>
-            <div class="gallery-position-text">
-                <h3 class="gallery-position-name">
-                    <a href="${position.link}" class="gallery-position-link">${position.name}</a>
-                </h3>         
+            `;
+        }else {
+            galleryPositionsDomString2 += `
+            <div class="gallery-position">
+                    <img src="${position.image}" alt="${position.name}">
+                <div class="gallery-position-text">
+                    <h3 class="gallery-position-name">
+                        <a href="${position.link}" class="gallery-position-link">${position.name}</a>
+                    </h3>         
+                </div>
             </div>
-        </div>
-        `;
+            `;
+        }
     }  
-    const galleryPageContainer = document.querySelector(".gallery-pages");//`#${id}`);
-      galleryPageContainer.innerHTML = galleryPositionsDomString;
+    const galleryPageContainer1 = document.querySelector(".gallery-column-1");//`#${id}`);
+    galleryPageContainer1.innerHTML = galleryPositionsDomString1;
+    const galleryPageContainer2 = document.querySelector(".gallery-column-2");//`#${id}`);
+    galleryPageContainer2.innerHTML = galleryPositionsDomString2;
 };
 
 
