@@ -2,7 +2,7 @@ const items = [
     {
         id: 1,
         name: "Images-1",
-        image: "images/images9.png",
+        image: "images/images9.jpg",
         link: "tour.html",
     },
     {
@@ -14,13 +14,13 @@ const items = [
     {
         id: 3,
         name:"Images-3",
-        image: "images/images2.png",
+        image: "images/images2.jpg",
         link: "tour.html",
     },
     {
         id: 4,
         name:"Images-4",
-        image: "images/images3.png",
+        image: "images/images3.jpg",
         link: "tour.html",
     },
     {
@@ -32,30 +32,30 @@ const items = [
     {
         id: 6,
         name: "Images-6",
-        image: "images/images6.png",
+        image: "images/images6.jpg",
         link: "tour.html",
     },{
         id: 7,
         name: "Images-7",
-        image: "images/images10.png",
+        image: "images/images10.jpg",
         link: "tour.html",
     },
     {
         id: 8,
         name: "Images-8",
-        image: "images/images8.png",
+        image: "images/images8.jpg",
         link: "tour.html",
     },
     {
         id: 9,
         name: "Images-9",
-        image: "images/images1.png",
+        image: "images/images1.jpg",
         link: "tour.html",
     },
     {
         id: 10,
         name: "Images-10",
-        image: "images/images7.png",
+        image: "images/images7.jpg",
         link: "tour.html",
     },
     {
@@ -67,37 +67,37 @@ const items = [
     {
         id: 12,
         name: "Images-12",
-        image: "images/images12.png",
+        image: "images/images12.jpg",
         link: "tour.html",
     },
     {
         id: 13,
         name: "Images-13",
-        image: "images/images13.png",
+        image: "images/images13.jpg",
         link: "tour.html",
     },
     {
         id: 14,
         name: "Images-14",
-        image: "images/images14.png",
+        image: "images/images14.jpg",
         link: "tour.html",
     },
     {
         id: 15,
         name: "Images-15",
-        image: "images/images5.png",
+        image: "images/images5.jpg",
         link: "tour.html",
     },
     {
         id: 16,
         name: "Images-16",
-        image: "images/images4.png",
+        image: "images/images4.jpg",
         link: "tour.html",
     },
     {
         id: 17,
         name: "Images-17",
-        image: "images/images11.png",
+        image: "images/images11.jpg",
         link: "tour.html",
     }
 ];
