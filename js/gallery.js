@@ -8,7 +8,7 @@ const items = [
     {
         id: 2,
         name: "Images-2",
-        image: "images/images5.png",
+        image: "images/images15.jpg",
         link: "tour.html",
     },
     {
@@ -26,7 +26,7 @@ const items = [
     {
         id: 5,
         name: "Images-5",
-        image: "images/images4.png",
+        image: "images/images17.jpg",
         link: "tour.html",
     },
     {
@@ -61,7 +61,7 @@ const items = [
     {
         id: 11,
         name: "Images-11",
-        image: "images/images11.png",
+        image: "images/images16.jpg",
         link: "tour.html",
     },
     {
@@ -80,6 +80,24 @@ const items = [
         id: 14,
         name: "Images-14",
         image: "images/images14.png",
+        link: "tour.html",
+    },
+    {
+        id: 15,
+        name: "Images-15",
+        image: "images/images5.png",
+        link: "tour.html",
+    },
+    {
+        id: 16,
+        name: "Images-16",
+        image: "images/images4.png",
+        link: "tour.html",
+    },
+    {
+        id: 17,
+        name: "Images-17",
+        image: "images/images11.png",
         link: "tour.html",
     }
 ];

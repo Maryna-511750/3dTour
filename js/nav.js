@@ -30,3 +30,24 @@ navLinks.forEach((navLink) => {
     });
   });
 });
+
+const languageSwitcher = document.getElementById('languageSwitcher');
+const elements = document.querySelectorAll('[data-lang]');
+
+window.addEventListener('load', () => {
+  const savedLang = localStorage.getItem('language') || 'en';
+  languageSwitcher.value = savedLang;
+  changeLanguage(savedLang);
+});
+
+languageSwitcher.addEventListener('change', (event) => {
+  const selectedLang = event.target.value;
+  localStorage.setItem('language', selectedLang);
+  changeLanguage(selectedLang);
+});
+
+function changeLanguage(lang) {
+  elements.forEach(el => {
+    el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+  });
+}

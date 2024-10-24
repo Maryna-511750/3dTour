@@ -1,24 +1,40 @@
 <nav id="desktop_navbar" class="navbar">
     <div class="navigation_wrapper">
-        <div class="gallery-nav-headers">
-            <h2 class="gallery-headers-sections-name">Igor<br>Levadnuk</h2>
+        <div class="gallery-nav-headers" data-lang="en">
+            <h2 class="gallery-headers-sections-name">Igor<br>Levada</h2>
+        </div>
+        <div class="gallery-nav-headers" data-lang="uk" style="display: none;">
+            <h2 class="gallery-headers-sections-name">Ігор<br>Левада</h2>
         </div>
         <div class="navigation_content">
-            <a class="navigation_link" href="#about-me">Igor Levadnuk</a>
-            <a class="navigation_link" href="#gallery">Gallery</a>
-            <a class="navigation_link_href" href="tour.html">3d tour</a>
+            <a class="navigation_link" data-lang="en" href="#about-me">Igor Levada</a>
+            <a class="navigation_link" data-lang="uk" style="display: none;" href="#about-me">Ігор Левада</a>
+            <a class="navigation_link" data-lang="en" href="#gallery">Gallery</a>
+            <a class="navigation_link" data-lang="uk" style="display: none;" href="#gallery">Галерея</a>
+            <a class="navigation_link_href" data-lang="en" href="tour.html">3d tour</a>
+            <a class="navigation_link_href" data-lang="uk" style="display: none;" href="tour.html">3Д тур</a>
         </div>
 
         <div class="social_media">
+
             <a href="#">
                 <i class="fa fa-facebook-square" style="font-size: 32px"></i>
             </a>
-            <a href="#">
-                <i class="fa fa-linkedin-square" style="font-size: 32px"></i>
+<!--            <a href="#">-->
+<!--                <i class="fa fa-linkedin-square" style="font-size: 32px"></i>-->
+<!--            </a>-->
+            <a href="https://www.instagram.com/igor_levadnyuk?igsh=ZWRncmViYzkxNXhy">
+                <i class="fa fa-instagram" style="font-size: 32px"></i>
             </a>
             <a href="#">
                 <i class="fa fa-telegram" style="font-size: 32px"></i>
             </a>
+        </div>
+        <div class="language_switcher">
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="uk">Українська</option>
+            </select>
         </div>
     </div>
     <div class="navigation_burger"><span></span></div>

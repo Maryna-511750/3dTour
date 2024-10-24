@@ -45,10 +45,14 @@
     text-align: center;
 }
 
-.social_media {
+.social_media, .language_switcher {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.language_switcher, select {
+    border: none;
 }
 
 .navigation_content a:hover {
