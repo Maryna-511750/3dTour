@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Bebas+Neue&family=Archivo+Black&family=Leckerli+One&family=Source+Sans+3:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Istok+Web&family=Dangrek&family=Bebas+Neue&family=Leckerli+One&family=Source+Sans+3:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -20,16 +20,18 @@
 }
 
 /*font-family*/
-
+* {
+    font-family: "Istok Web", sans-serif;
+}
 .gallery-headers-sections-name{
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Rubik Dirt", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 68px;
 }
 .gallery-headers-paragraph-welcome,
 .gallery-nav-sections-button,
-.gallery-footer {
+.gallery-footer a, .gallery-footer-contact p {
     font-family: 'Source Sans 3', sans-serif;
 }
 .gallery-headers-big-paragraph,
