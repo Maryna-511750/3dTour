@@ -11,6 +11,7 @@
     --text-color-alternative: #0D0D0D;
     --text-link-color: #BFBFBF;
     --background-color-dark: #F2F2F2;
+    --background-color-gray: rgba(242, 242, 242, 0.8);
     --background-color: white;
     --text-color-light: #8C8C8C;
     scroll-behavior: smooth;

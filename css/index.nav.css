@@ -53,6 +53,11 @@
 
 .language_switcher, select {
     border: none;
+    background-color: inherit;
+}
+
+.navigation_link.active{
+    background-color: var(--background-color-gray);
 }
 
 .navigation_content a:hover {
