@@ -100,6 +100,12 @@
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
 
+    // Create name hotspots.
+    data.nameHotspots.forEach(function(hotspot) {
+      var element = createNameHotspotElement(hotspot);
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+    });
+
     return {
       data: data,
       scene: scene,
@@ -318,6 +324,7 @@
     wrapper.querySelector('.info-hotspot-header').addEventListener('click', () => {
       // Save state if we need to return to a specific location.
       localStorage.setItem('fromGallery', 'true');
+      localStorage.setItem('target', hotspot.target);
       localStorage.setItem('imageUrl', hotspot.imageUrl); // Pass the image data if needed.
 
       // Navigate to the image page.
@@ -334,9 +341,39 @@
     // Remove state if it was set previously.
     if (fromGallery) {
       localStorage.removeItem('fromGallery');
+
+      const targetPosition = localStorage.getItem('target');
+      if (targetPosition) {
+        switchScene(findSceneById(targetPosition));
+        localStorage.removeItem('target');
+      }
     }
   });
 
+  function createNameHotspotElement(hotspot) {
+    // Створюємо обгортку для іконки та тексту.
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot', 'name-hotspot');
+
+    // Створюємо заголовок гарячої точки.
+    const header = document.createElement('div');
+    header.classList.add('name-hotspot-header');
+    header.style.width = hotspot.width;
+    header.style.height = hotspot.height;
+
+    // Додаємо заголовок.
+    const titleWrapper = document.createElement('div');
+    titleWrapper.classList.add('name-hotspot-title-wrapper');
+    const title = document.createElement('div');
+    title.classList.add('name-hotspot-title');
+    title.innerHTML = hotspot.title;
+    titleWrapper.appendChild(title);
+
+    header.appendChild(titleWrapper);
+    wrapper.appendChild(header);
+
+    return wrapper;
+  }
 
   // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element, eventList) {

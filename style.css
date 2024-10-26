@@ -913,3 +913,38 @@ body.view-control-buttons .viewControlButton {
   width: 40px;
   height: 40px;
 }
+
+.name-hotspot .name-hotspot-header {
+  background-color: rgba(103,115,131,0);
+  cursor: pointer;
+  -webkit-transition: width 0.3s ease-in-out 0.5s,
+  border-radius 0.3s ease-in-out 0.5s;
+  transition: width 0.3s ease-in-out 0.5s,
+  border-radius 0.3s ease-in-out 0.5s;
+}
+
+.name-hotspot .name-hotspot-title-wrapper {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  display: none;
+  background-color: rgba(255,255,255,0.2);
+  width: auto;
+  height: 40px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: width 0s 0.4s,
+  padding 0s 0.4s;
+  transition: width 0s 0.4s,
+  padding 0s 0.4s;
+}
+
+.desktop .name-hotspot.visible .name-hotspot-title-wrapper,
+.desktop.no-touch .name-hotspot .name-hotspot-header:hover .name-hotspot-title-wrapper{
+  display: block;
+  padding: 0 5px;
+  -webkit-transition: width 0s 0.4s,
+  padding 0s 0.4s;
+  transition: width 0s 0.4s,
+  padding 0s 0.4s;
+}
