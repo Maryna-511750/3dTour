@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-01_2",
-      "name": "01_2",
+      "name": "Wine Room-1",
       "levels": [
         {
           "tileSize": 256,
@@ -175,7 +175,7 @@ var APP_DATA = {
     },
     {
       "id": "1-02_2",
-      "name": "02_2",
+      "name": "Wine Room-2",
       "levels": [
         {
           "tileSize": 256,
@@ -242,7 +242,7 @@ var APP_DATA = {
     },
     {
       "id": "2-03",
-      "name": "03",
+      "name": "Banquet Hall-1",
       "levels": [
         {
           "tileSize": 256,
@@ -317,7 +317,7 @@ var APP_DATA = {
     },
     {
       "id": "3-04",
-      "name": "04",
+      "name": "Banquet Hall-2",
       "levels": [
         {
           "tileSize": 256,
@@ -399,7 +399,7 @@ var APP_DATA = {
     },
     {
       "id": "4-5_8bit",
-      "name": "5_8bit",
+      "name": "Banquet Hall-3",
       "levels": [
         {
           "tileSize": 256,
@@ -460,7 +460,7 @@ var APP_DATA = {
     },
     {
       "id": "5-6_8bit",
-      "name": "6_8bit",
+      "name": "Music Lounge-1",
       "levels": [
         {
           "tileSize": 256,
@@ -555,7 +555,7 @@ var APP_DATA = {
     },
     {
       "id": "6-7_8bit",
-      "name": "7_8bit",
+      "name": "Music Lounge-2",
       "levels": [
         {
           "tileSize": 256,
@@ -651,7 +651,7 @@ var APP_DATA = {
     },
     {
       "id": "7-8_8bit",
-      "name": "8_8bit",
+      "name": "Music Lounge-3",
       "levels": [
         {
           "tileSize": 256,
@@ -712,7 +712,7 @@ var APP_DATA = {
     },
     {
       "id": "8-9",
-      "name": "9",
+      "name": "Terrace",
       "levels": [
         {
           "tileSize": 256,
